@@ -5,3 +5,19 @@ h1 {
   align-items: center;
   justify-content: center;
 }
+.container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: rgb(197, 197, 197);
+  height: 350px;
+  width: 250px;
+  margin: 20px;
+  padding: 10px;
+}
+.burger {
+  width: 100%;
+}
