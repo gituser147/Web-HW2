@@ -1,0 +1,31 @@
+body {
+  background-image: url("./background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15%;
+  color: white;
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 45.65%;
+  font-size: larger;
+}
+button:hover {
+  background-color: rgb(13, 179, 27);
+}
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
