@@ -5,6 +5,14 @@ h1 {
   align-items: center;
   justify-content: center;
 }
+.header {
+  width: auto;
+  height: auto;
+  position: sticky;
+  top: 0%;
+  perspective: 1000px;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -17,7 +25,59 @@ h1 {
   width: 250px;
   margin: 20px;
   padding: 10px;
+  box-shadow: 5px 5px 8px 3px rgb(85, 2, 2);
+  border-style: solid;
+}
+.burgercard {
+  background-color: rgb(197, 197, 197);
+  height: 350px;
+  width: 250px;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 5px 5px 8px 3px rgb(85, 2, 2);
+  border-style: solid;
 }
 .burger {
   width: 100%;
+}
+.zinger {
+  width: 100%;
+  height: 50%;
+}
+.fish {
+  width: 100%;
+  height: 50%;
+}
+.beef {
+  width: 100%;
+  height: 50%;
+}
+.chicken {
+  width: 100%;
+  height: 50%;
+}
+.pizza {
+  width: 100%;
+  height: 50%;
+}
+.burgercard {
+  position: relative;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.card1:hover .burgercard {
+  transform: rotateY(180deg);
+}
+.burgercard .backcard {
+  position: absolute;
+  backface-visibility: hidden;
+}
+.cell1 {
+  perspective: 1000px;
+}
+.backcard {
+  background-color: rgb(197, 197, 197);
+
+  transform: rotateY(180deg);
 }
