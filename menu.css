@@ -10,7 +10,6 @@ h1 {
   height: auto;
   position: sticky;
   top: 0%;
-  perspective: 1000px;
 }
 
 .container {
@@ -18,6 +17,7 @@ h1 {
   justify-content: center;
   margin: auto;
   flex-wrap: wrap;
+  perspective: 1000px;
 }
 .card {
   background-color: rgb(197, 197, 197);
@@ -36,9 +36,11 @@ h1 {
   padding: 10px;
   box-shadow: 5px 5px 8px 3px rgb(85, 2, 2);
   border-style: solid;
+  position: relative;
 }
 .burger {
   width: 100%;
+  height: 50%;
 }
 .zinger {
   width: 100%;
@@ -60,24 +62,38 @@ h1 {
   width: 100%;
   height: 50%;
 }
-.burgercard {
+.card1 {
   position: relative;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  height: 350px;
+  width: 250px;
 }
-.card1:hover .burgercard {
+.cell1:hover .card1 {
   transform: rotateY(180deg);
 }
-.burgercard .backcard {
+.burgercard,
+.backcard {
   position: absolute;
+  height: 350px;
+  width: 250px;
   backface-visibility: hidden;
-}
-.cell1 {
-  perspective: 1000px;
 }
 .backcard {
   background-color: rgb(197, 197, 197);
-
+  height: 350px;
+  width: 250px;
   transform: rotateY(180deg);
+  margin: 20px;
+  padding: 16px;
+}
+.cell1 {
+  height: 350px;
+  width: 310px;
+  background-color: transparent;
+  perspective: 1000px;
+}
+h2 {
+  margin-bottom: 100px;
 }
