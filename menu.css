@@ -97,3 +97,46 @@ h1 {
 h2 {
   margin-bottom: 100px;
 }
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+.card2 {
+  position: relative;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  height: 350px;
+  width: 250px;
+}
+.cell2:hover .card2 {
+  transform: rotateY(180deg);
+}
+.zinger-card,
+.backcard2 {
+  position: absolute;
+  height: 350px;
+  width: 250px;
+  backface-visibility: hidden;
+}
+.backcard2 {
+  background-color: rgb(197, 197, 197);
+  height: 350px;
+  width: 250px;
+  transform: rotateY(180deg);
+  margin: 20px;
+  padding: 16px;
+}
+.cell2 {
+  height: 350px;
+  width: 310px;
+  background-color: transparent;
+  perspective: 1000px;
+}
+.zinger-card {
+  background-color: rgb(197, 197, 197);
+  height: 350px;
+  width: 250px;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 5px 5px 8px 3px rgb(85, 2, 2);
+  border-style: solid;
+  position: relative;
+}
