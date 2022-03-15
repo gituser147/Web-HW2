@@ -1,26 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap");
 body {
-  background-image: url("./background.jpg");
+  background-image: url("./assets/imgs/background3.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  /* background-repeat: no-repeat; */
 }
 h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 15%;
-  color: white;
+  margin-top: 20%;
+  margin-left: 36px;
+  color: rgb(0, 0, 0);
   font-size: 50px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Merriweather", serif;
+}
+h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2%;
+  margin-left: 36px;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-family: "Cormorant Garamond", serif;
 }
 button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 45.65%;
-  font-size: larger;
+  margin-left: 3%;
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 7px;
 }
 button:hover {
-  background-color: rgb(13, 179, 27);
+  background-color: rgb(106, 95, 255);
+  cursor: pointer;
 }
 a {
   display: flex;
@@ -28,4 +52,41 @@ a {
   justify-content: center;
   text-decoration: none;
   color: black;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04aa6d;
+}
+li {
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
 }
